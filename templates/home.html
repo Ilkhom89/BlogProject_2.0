@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Bosh sahifa{% endblock title %}
+{% block content %}
+
+
+<!--YANGI KOD-->
+
+<div class="jombotron">
+    <h1 class="display-4">Assalom aleykum !</h1>
+    <p class="lead">Farangiz Shuxratovnaning shaxsiy blogiga xush kelibsiz</p>
+    <hr class="my-4">
+    <p>Bu yerda siz tort va shirinliklarga oid retseplardan xabardor bo'lib turasiz</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Postlarni ko'rish </a>
+    </p>
+</div>
+
+
+<!--  ESKI KOD-->
+<!--    {% if user.is_authenticated %}-->
+<!--    {{ user.first_name.upper }}-->
+<!--    {{ user.last_name.capitalize }}!-->
+<!--    <form method="post" action="{% url 'logout' %}">-->
+<!--        {% csrf_token %}-->
+<!--        <button type="submit">Chiqib ketish</button>-->
+<!--    </form>-->
+<!--{% else %}-->
+<!--    <p>Saytga kirmagansiz</p>-->
+<!--    <a href="{% url 'login' %}">Kirish</a> |-->
+<!--    <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a>-->
+<!--{% endif %}-->
+
+
+
+{% endblock content %}
+
